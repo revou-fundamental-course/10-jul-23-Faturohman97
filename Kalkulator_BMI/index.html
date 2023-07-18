@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- import custom font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Hitung Berat Badan Ideal</h1>
+    <div class="container">
+        <form>
+            <p class="inputs">
+                <label>Pria </label>
+                <input type="radio" id="pria">
+            </p>
+            <p class="inputs">
+                <label>Wanita </label>
+                <input type="radio" id="wanita">
+            </p>
+            <p class="inputs">
+                <label>Berat Badan (KG): </label>
+                <input type="text" id="berat" >
+            </p>
+            <p class="inputs">
+                <label>Usia (Tahun): </label>
+                <input type="text" id="usia" >
+            </p>
+            <p class="inputs">
+                <label>Tinggi Badan (CM): </label>
+                <input type="text" id="tinggi" >
+            </p>
+            <button class="calcBtn">Hitung BMI</button>
+            <div style="margin-top: 20px;">Your BMI is: <p id="results"></p>
+            </div>
+            <p id="message"></p>
+        </form>
+        <script src="./js/script.js"></script>
+    </div>
+</body>
+</html>
